@@ -29,16 +29,6 @@ Visualización: Hipnogramas, Time Series Plots, Histogramas.
 
 Fuentes de Datos Comunes: Conjuntos de datos de Kaggle (Sleep Health and Lifestyle Dataset), PhysioNet (MESA Sleep dataset), o APIs de dispositivos (Oura Ring, Fitbit).
 
-📦 Requisitos
-
-Bash
-
-pip install numpy pandas scikit-learn matplotlib seaborn
-# Para Deep Learning:
-pip install tensorflow
-# O si se usa procesamiento de señales:
-pip install mne
-🚀 Ejecución
 
 El proceso de análisis típicamente se encuentra documentado en un Jupyter Notebook (analisis_sueno.ipynb) o scripts de Python.
 

@@ -1,122 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amber Grijalva | Inteligencia Artificial</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos de IA - Amber Grijalba</title>
+    <style>
+        /* Paleta de Colores Femeninos: Lavanda Suave, Malva y Blanco */
+        :root {
+            --color-fondo: #F8F4F9; /* Fondo muy claro (Lavanda/Rosa) */
+            --color-primario: #C79FDD; /* Acento principal (Lila Suave) */
+            --color-secundario: #5A456C; /* Texto principal (Malva Oscuro) */
+            --color-tarjeta-fondo: #FFFFFF; /* Fondo de tarjeta (Blanco) */
+            --color-sombra: rgba(0, 0, 0, 0.05); /* Sombra ligera */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-fondo);
+            color: var(--color-secundario);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--color-primario);
+            color: var(--color-tarjeta-fondo);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--color-sombra);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Estilo para las "Pestañas Cuadradas" de las tareas */
+        .grid-tareas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 4 columnas o más según el tamaño */
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .tarea-card {
+            background-color: var(--color-tarjeta-fondo);
+            border: 2px solid var(--color-primario);
+            border-radius: 15px; /* Bordes ligeramente redondeados */
+            box-shadow: 0 6px 12px var(--color-sombra);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            aspect-ratio: 1 / 1; /* Esto hace que sean cuadradas */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none; /* Quitar subrayado si se usa como enlace */
+            color: var(--color-secundario);
+        }
+
+        .tarea-card:hover {
+            transform: translateY(-5px); /* Efecto flotante */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: var(--color-fondo);
+        }
+
+        .card-icon {
+            font-size: 3em;
+            color: var(--color-primario);
+            margin-bottom: 10px;
+            /* Aquí irá tu "pequeña imagen" o icono bonito de IA */
+        }
+
+        .card-image {
+            width: 80px; /* Tamaño de la imagen bonita */
+            height: 80px;
+            margin-bottom: 15px;
+            object-fit: contain;
+            /* Usamos un degradado circular como placeholder para la imagen de IA */
+            background: radial-gradient(circle, var(--color-primario) 0%, var(--color-secundario) 100%);
+            border-radius: 50%;
+            border: 3px solid var(--color-secundario);
+        }
+
+        .card-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background-color: var(--color-primario);
+            color: var(--color-tarjeta-fondo);
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Amber Grijalva</h1>
-    <p>Ingeniería Biomédica | Inteligencia Artificial</p>
-  </header>
 
-  <section class="about">
-    <h2>Sobre mí</h2>
-    <p>Apasionada por la Inteligencia Artificial aplicada a la Ingeniería Biomédica. Aquí encontrarás mis proyectos, tareas y experimentos de la materia de IA 💡.</p>
-  </section>
+    <header>
+        <h1>AMBER GRIJALBA - REPOSITORIO DE PROYECTOS</h1>
+        <p>Materia: Inteligencia Artificial (IA)</p>
+    </header>
 
-  <section class="projects">
-    <h2>Mis Proyectos y Tareas 🧠</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Red neuronal">
-        <h3>Tarea 1</h3>
-        <p>Introducción a la IA</p>
-      </div>
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px; color: var(--color-secundario);">Mis Tareas y Proyectos</h2>
 
-      <div class="project-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712030.png" alt="Machine learning">
-        <h3>Tarea 2</h3>
-        <p>Algoritmos de Aprendizaje Automático</p>
-      </div>
+        <div class="grid-tareas">
+            <a href="#" class="tarea-card">
+                <div class="card-image"></div>
+                <div class="card-icon">🧠</div> 
+                <div class="card-title">Tarea 1: Introducción a Python para IA</div>
+            </a>
 
-      <div class="project-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/8598/8598409.png" alt="Datos biomédicos">
-        <h3>Tarea 3</h3>
-        <p>Procesamiento de Datos Biomédicos</p>
-      </div>
+            <a href="#" class="tarea-card">
+                <div class="card-image"></div>
+                <div class="card-icon">💻</div>
+                <div class="card-title">Tarea 2: Implementación de Redes Neuronales</div>
+            </a>
 
-      <div class="project-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048948.png" alt="Chatbot">
-        <h3>Tarea 4</h3>
-        <p>Chatbot con IA</p>
-      </div>
+            <a href="#" class="tarea-card">
+                <div class="card-image"></div>
+                <div class="card-icon">📊</div>
+                <div class="card-title">Tarea 3: Clasificación con Machine Learning</div>
+            </a>
+
+            <a href="#" class="tarea-card">
+                <div class="card-image"></div>
+                <div class="card-icon">💬</div>
+                <div class="card-title">Tarea 4: Procesamiento de Lenguaje Natural (PLN)</div>
+            </a>
+            
+            </div>
     </div>
-  </section>
+    
+    <footer>
+        <p>&copy; 2024 Repositorio de Proyectos de Amber Grijalba</p>
+    </footer>
 
-  <footer>
-    <p>💗 Página creada por Amber Grijalva | 2025</p>
-  </footer>
 </body>
 </html>
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  background-color: #fff8fb;
-  color: #4a4a4a;
-  text-align: center;
-}
-
-header {
-  background: linear-gradient(135deg, #fbb6ce, #d8b4fe);
-  color: white;
-  padding: 2rem 1rem;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.3rem;
-}
-
-.about, .projects {
-  padding: 2rem 1rem;
-}
-
-.about h2, .projects h2 {
-  color: #d63384;
-  margin-bottom: 1rem;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
-}
-
-.project-card {
-  background-color: #ffe6f2;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 1rem;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-.project-card img {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
-}
-
-.project-card h3 {
-  color: #b83280;
-  margin-bottom: 0.3rem;
-}
-
-footer {
-  background-color: #f8d7e6;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #5a5a5a;
-  border-top: 2px solid #fbb6ce;
-}

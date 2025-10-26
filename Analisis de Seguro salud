@@ -1,0 +1,67 @@
+
+Análisis de Datos para Calcular Cuánto se Pagará de Seguro
+
+Este proyecto tiene como objetivo predecir el costo de un seguro médico utilizando un conjunto de datos que incluye variables como la edad,
+el índice de masa corporal (IMC), número de hijos, si la persona fuma o no, y la región en la que reside. A continuación, se describe el análisis que se realizó para
+entender el comportamiento de los datos y prepararlos para el modelado predictivo.
+
+La primera fase del análisis consiste en explorar el conjunto de datos. Al cargar los datos, realizamos una inspección inicial para entender qué variables tenemos, 
+cómo están estructurados los datos, y si hay valores faltantes o inconsistentes.
+Tratamiento de valores vacíos: En muchos conjuntos de datos, es común que existan valores nulos o vacíos. Estos valores fueron identificados y tratados de la siguiente
+manera:
+
+Para las columnas numéricas, se reemplazaron los valores nulos por la mediana, ya que es una estrategia robusta que no se ve afectada por valores atípicos.
+
+Para las columnas categóricas, se reemplazaron los valores nulos por la categoría más frecuente, también conocida como la moda.
+
+Esto fue importante porque la ausencia de datos puede afectar la precisión de los modelos predictivos si no se maneja adecuadamente.
+
+Análisis Univariante
+
+En el análisis univariante, observamos la distribución de cada variable, tanto numérica como categórica, para obtener una idea clara de la tendencia de cada una de ellas.
+
+Variables numéricas: Para las variables continuas como "edad", "IMC" y "cargos", se observó que las distribuciones mostraban una variabilidad esperada. Por ejemplo, 
+la edad seguía una distribución normal, mientras que el IMC tenía una concentración en torno a valores intermedios, con algunos valores altos (que indican obesidad).
+
+Variables categóricas: En las variables como "sexo" y "fuma", encontramos que la mayoría de los datos correspondían a no fumadores y una distribución equilibrada entre hombres y mujeres.
+
+Deducción: Las variables con mayor concentración pueden tener un mayor impacto en la predicción del costo del seguro. Por ejemplo, el hábito de fumar tiene una relación 
+directa con mayores costos de seguro debido a los riesgos asociados con la salud.
+
+Filtrado de Variables
+
+En este paso, realizamos una reducción del conjunto de datos para eliminar los valores atípicos extremos que podrían afectar la precisión del modelo.
+
+Eliminación de outliers: Utilizamos el método de rango intercuartil (IQR) para detectar y eliminar los valores atípicos extremos. Esto se hace porque los outliers pueden distorsionar los resultados del modelo de regresión, afectando la exactitud de las predicciones.
+
+Por ejemplo, se observó que algunas personas tenían un IMC extremadamente bajo o alto, lo que no refleja la realidad de la mayoría de los asegurados, y por ello fueron eliminados.
+
+Análisis Bivariante
+
+El análisis bivariante consistió en explorar la relación entre la variable objetivo y las demás variables predictoras.
+
+Relación con la edad: Se observó que a medida que la edad aumenta, también lo hace el costo del seguro. Esto tiene sentido, ya que las personas mayores generalmente tienen mayores riesgos de salud, lo que aumenta el costo de su seguro.
+
+Relación con el IMC: El costo del seguro también muestra una correlación positiva con el IMC. A mayor IMC, el costo tiende a ser más alto, lo cual es esperado, ya que el sobrepeso y la obesidad están relacionados con enfermedades que aumentan los gastos médicos.
+
+Relación con el hábito de fumar: Se encontró una clara diferencia en el costo del seguro entre fumadores y no fumadores. Los fumadores tienen un costo mucho más alto debido a los riesgos adicionales para la salud que presenta el fumar.
+
+Matriz de Correlación
+
+Para comprender mejor las relaciones entre las variables, se generó una matriz de correlación.
+
+Correlaciones positivas: Se encontró que la edad y el IMC tienen una correlación positiva con el costo del seguro, lo que significa que a medida que estas variables aumentan, el costo del seguro también tiende a aumentar.
+
+Correlaciones negativas: En cuanto a las variables como la región, no hubo correlaciones fuertes con el costo del seguro.
+
+A partir de esto, se decidió eliminar la variable "region" de las variables predictoras, ya que no mostraba una correlación significativa con la variable objetivo.
+
+División del Dataset en Entrenamiento y Prueba
+
+Para evitar el sobreajuste, el conjunto de datos fue dividido en dos partes: 80% para entrenamiento y 20% para prueba. Se utilizó la técnica de estratificación para asegurar que ambas divisiones tuvieran una proporción similar de la variable objetivo ("charges").
+
+Esto garantiza que el modelo será evaluado de manera justa, con una distribución representativa de la variable objetivo en ambas particiones.
+
+Guardado del Dataset
+
+El dataset limpio y preparado fue guardado como archivos train.csv y test.csv para ser utilizado en la creación de modelos predictivos. Esta división también permite la validación del modelo y el ajuste de parámetros, mejorando su capacidad de generalización a nuevos datos.

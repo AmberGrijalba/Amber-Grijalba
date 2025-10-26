@@ -1,0 +1,53 @@
+Análisis de Datos para Estilos y Patrones de Sueño
+📋 Descripción
+
+Proyecto de análisis de datos centrado en estilos y patrones de sueño utilizando técnicas de machine learning y data science. El objetivo principal es identificar, clasificar y visualizar las etapas del sueño (Vigilia, N1, N2, N3, REM) o predecir la calidad del sueño y la posible presencia de trastornos del sueño a partir de datos fisiológicos (como EEG, HRV, Actigrafía) o métricas de dispositivos wearable.
+
+🎯 Objetivos
+
+Preprocesar y limpiar grandes conjuntos de datos de sueño.
+
+Realizar un Análisis Exploratorio de Datos (EDA) para visualizar tendencias y distribuciones de los patrones de sueño (duración, eficiencia, tiempos de inicio/finalización).
+
+Implementar un modelo de clasificación supervisada (o Deep Learning) para la detección automática de etapas del sueño (Sleep Staging).
+
+Evaluar la precisión y otras métricas del modelo de clasificación.
+
+🛠️ Tecnologías
+
+Lenguaje: Python, R
+
+Librerías: Pandas, NumPy (para manejo de datos), Matplotlib, Seaborn (para visualización), Scikit-learn (para ML clásico), TensorFlow o PyTorch (para Deep Learning).
+
+Técnicas:
+
+Procesamiento de Señales: Extracción de características de EEG/HRV.
+
+Clasificación: Random Forest, Support Vector Machines (SVM), Redes Neuronales Convolucionales (CNN) o Redes Recurrentes (LSTM).
+
+Visualización: Hipnogramas, Time Series Plots, Histogramas.
+
+Fuentes de Datos Comunes: Conjuntos de datos de Kaggle (Sleep Health and Lifestyle Dataset), PhysioNet (MESA Sleep dataset), o APIs de dispositivos (Oura Ring, Fitbit).
+
+📦 Requisitos
+
+Bash
+
+pip install numpy pandas scikit-learn matplotlib seaborn
+# Para Deep Learning:
+pip install tensorflow
+# O si se usa procesamiento de señales:
+pip install mne
+🚀 Ejecución
+
+El proceso de análisis típicamente se encuentra documentado en un Jupyter Notebook (analisis_sueno.ipynb) o scripts de Python.
+
+Cargar Datos: Ejecutar el script de carga y limpieza (data_cleaning.py).
+
+Entrenar Modelo: Ejecutar el notebook de entrenamiento del modelo.
+
+Visualizar Resultados: Generar los gráficos y el informe final.
+
+📊 Resultados
+
+Los resultados clave, como la precisión del modelo de clasificación de etapas del sueño, la matriz de confusión y los principales insights del EDA (ej. correlaciones entre la calidad del sueño y el estilo de vida), se detallan en el documento INFORME_SUENO.pdf.

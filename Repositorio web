@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amber Grijalva | Inteligencia Artificial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Amber Grijalva</h1>
+    <p>Ingeniería Biomédica | Inteligencia Artificial</p>
+  </header>
+
+  <section class="about">
+    <h2>Sobre mí</h2>
+    <p>Apasionada por la Inteligencia Artificial aplicada a la Ingeniería Biomédica. Aquí encontrarás mis proyectos, tareas y experimentos de la materia de IA 💡.</p>
+  </section>
+
+  <section class="projects">
+    <h2>Mis Proyectos y Tareas 🧠</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Red neuronal">
+        <h3>Tarea 1</h3>
+        <p>Introducción a la IA</p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712030.png" alt="Machine learning">
+        <h3>Tarea 2</h3>
+        <p>Algoritmos de Aprendizaje Automático</p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/8598/8598409.png" alt="Datos biomédicos">
+        <h3>Tarea 3</h3>
+        <p>Procesamiento de Datos Biomédicos</p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048948.png" alt="Chatbot">
+        <h3>Tarea 4</h3>
+        <p>Chatbot con IA</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>💗 Página creada por Amber Grijalva | 2025</p>
+  </footer>
+</body>
+</html>
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #fff8fb;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(135deg, #fbb6ce, #d8b4fe);
+  color: white;
+  padding: 2rem 1rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.about, .projects {
+  padding: 2rem 1rem;
+}
+
+.about h2, .projects h2 {
+  color: #d63384;
+  margin-bottom: 1rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.project-card {
+  background-color: #ffe6f2;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+  color: #b83280;
+  margin-bottom: 0.3rem;
+}
+
+footer {
+  background-color: #f8d7e6;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #5a5a5a;
+  border-top: 2px solid #fbb6ce;
+}

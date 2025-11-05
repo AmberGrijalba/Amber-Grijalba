@@ -1,0 +1,15 @@
+# The contents of the file /sleep-patterns-analysis/sleep-patterns-analysis/data/processed/sleep_train.csv will be generated based on the specifications provided.
+
+# Assuming the cleaned dataset has been processed and the training dataset is ready, here is a sample structure for the CSV file.
+
+"age","gender","sleep_duration","stress_level","exercise_frequency","sleep_quality","target_stress"
+25,"Female",7.5,5,"Regular","Good","ESTRES MODERADO"
+30,"Male",6.0,8,"Occasional","Fair","ESTRESADO"
+22,"Female",8.0,3,"Regular","Excellent","ESTRES MODERADO"
+35,"Male",5.5,7,"Rare","Poor","ESTRESADO"
+28,"Female",6.5,4,"Regular","Good","ESTRES MODERADO"
+40,"Male",7.0,9,"Occasional","Fair","ESTRESADO"
+33,"Female",7.2,6,"Regular","Good","ESTRES MODERADO"
+29,"Male",5.0,10,"Rare","Poor","ESTRESADO"
+31,"Female",8.5,2,"Regular","Excellent","ESTRES MODERADO"
+26,"Male",6.8,5,"Occasional","Good","ESTRES MODERADO"

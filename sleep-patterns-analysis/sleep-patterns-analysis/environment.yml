@@ -1,0 +1,16 @@
+name: sleep-patterns-analysis
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - jupyter
+  - ipykernel
+  - pyyaml
+  - notebook
+  - statsmodels
+  - scipy

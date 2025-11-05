@@ -1,0 +1,11 @@
+id,age,gender,stress_level,sleep_duration,exercise_frequency,diet_quality,work_hours,screen_time
+1,25,Male,5,7,3,4,40,5
+2,30,Female,7,6,2,3,45,6
+3,22,Male,3,8,4,5,35,4
+4,28,Female,6,5,3,4,50,7
+5,35,Male,8,4,1,2,60,8
+6,40,Female,4,6,2,3,55,5
+7,29,Male,6,7,3,4,42,6
+8,33,Female,5,5,4,5,48,7
+9,26,Male,7,6,2,3,38,6
+10,31,Female,4,8,3,4,52,5

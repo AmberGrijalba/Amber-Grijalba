@@ -1,0 +1,17 @@
+name: medical-insurance-cost-analysis
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyter
+  - ipykernel
+  - statsmodels
+  - pip
+  - pip:
+      - xgboost
+      - lightgbm
